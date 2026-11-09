@@ -21,8 +21,19 @@ public class Main {
         } else {
             bos = 20 - (dogru + yanlis);
             net = dogru - (yanlis / 4.0);
+
             System.out.println("Boş: " + bos);
             System.out.println("Net: " + net);
+
+            if (net < 5) {
+                System.out.println("Başarısız");
+            } else if (net < 10) {
+                System.out.println("Geliştirilmeli");
+            } else if (net < 15) {
+                System.out.println("Orta");
+            } else {
+                System.out.println("Başarılı");
+            }
         }
 
         scanner.close();
