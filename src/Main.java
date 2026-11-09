@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +18,7 @@ public class Main {
         yanlis = scanner.nextInt();
 
         if (dogru < 0 || yanlis < 0 || dogru + yanlis > 20) {
-            System.out.println("Hatalı giriş yaptınızz");
+            System.out.println("Geçersiz giriş!");
         } else {
             bos = 20 - (dogru + yanlis);
             net = dogru - (yanlis / 4.0);
@@ -25,14 +26,14 @@ public class Main {
             System.out.println("Boş: " + bos);
             System.out.println("Net: " + net);
 
-            if (net < 5) {
-                System.out.println("Başarısız");
-            } else if (net < 10) {
-                System.out.println("Geliştirilmeli");
-            } else if (net < 15) {
+            if (net >= 15) {
+                System.out.println("Çok iyi");
+            } else if (net >= 10) {
+                System.out.println("İyi");
+            } else if (net >= 5) {
                 System.out.println("Orta");
             } else {
-                System.out.println("Başarılı");
+                System.out.println("Geliştirilmeli");
             }
         }
 
