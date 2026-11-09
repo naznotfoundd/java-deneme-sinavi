@@ -37,23 +37,22 @@ Kullanıcıdan doğru ve yanlış sayılarını al.
 
 EĞER dogru < 0 VEYA yanlis < 0 VEYA dogru + yanlis > 20 İSE
     "Geçersiz giriş!" yazdır.
-DEĞİLSE
+Değilse
     bos = 20 - (dogru + yanlis)
     net = dogru - (yanlis / 4)
 
     Boş sayısını ve neti yazdır.
 
-    EĞER net >= 15 İSE
+    Eğer net >= 15 İSE
         "Çok iyi" yazdır.
-    DEĞİLSE EĞER net >= 10 İSE
+    Değilse Eğer net >= 10 İSE
         "İyi" yazdır.
-    DEĞİLSE EĞER net > 5 İSE
+    Değilse Eğer net > 5 İSE
         "Orta" yazdır.
-    DEĞİLSE
+    Değilse
         "Geliştirilmeli" yazdır.
-    BİTİR
-BİTİR
-
+    Bitir
+Bitir
 ## 5. Akış Şeması
 
 ![Akış Şeması](docs/akis-semasi.png)
