@@ -5,17 +5,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // TODO: 1. Kullanıcıdan doğru ve yanlış sayısını alın
+        int dogru;
+        int yanlis;
+        int bos;
+        double net;
 
-        // TODO: 2. Girdileri kontrol edin (negatif, toplam > 20, tam sayı)
+        System.out.print("Doğru sayısını giriniz: ");
+        dogru = scanner.nextInt();
 
-        // TODO: 3. Boş sayısını hesaplayın
+        System.out.print("Yanlış sayısını giriniz: ");
+        yanlis = scanner.nextInt();
 
-        // TODO: 4. Neti hesaplayın
-
-        // TODO: 5. Başarı durumunu belirleyin
-
-        // TODO: 6. Sonucu ekrana yazdırın
+        if (dogru < 0 || yanlis < 0 || dogru + yanlis > 20) {
+            System.out.println("Hatalı giriş yaptınızz");
+        } else {
+            bos = 20 - (dogru + yanlis);
+            net = dogru - (yanlis / 4.0);
+            System.out.println("Boş: " + bos);
+            System.out.println("Net: " + net);
+        }
 
         scanner.close();
     }
