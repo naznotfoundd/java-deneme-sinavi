@@ -1,7 +1,7 @@
 # Rapor
 
-**Ad Soyad:**
-**Numara:**
+**Ad Soyad:Naz Kuruçay**
+**Numara:663**
 
 ## 1. Problem Analizi
 <!-- Problemi kendi cümlelerinizle yazın. -->
@@ -10,10 +10,10 @@
 ## 2. Girdi - İşlem - Çıktı
 
 **Girdiler:**
--
+-Doğru sayısı,yanlış sayısı
 
 **İşlemler:**
--
+-Girilen değerin tam sayı ve negatif olup olmadığını kontrol e
 
 **Çıktılar:**
 -
